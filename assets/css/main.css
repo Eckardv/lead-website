@@ -1452,8 +1452,39 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Starter Section Section
+# WhatsApp Button
 --------------------------------------------------------------*/
-/*.starter-section {
-  /* Add your styles here */
-/*}*/
+#whatsapp-button {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  z-index: 1000;
+  background-color: #25D366; /* WhatsApp green */
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#whatsapp-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+}
+#whatsapp-button {
+  transform: translateY(100px);
+  opacity: 0;
+  animation: slideIn 0.6s forwards 0.5s;
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
