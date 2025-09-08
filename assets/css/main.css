@@ -1456,8 +1456,8 @@ section,
 --------------------------------------------------------------*/
 #whatsapp-button {
   position: fixed;
-  bottom: 25px;
-  right: 25px;
+  bottom: 65px;
+  right: 10px;
   width: 60px;
   height: 60px;
   z-index: 1000;
